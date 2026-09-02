@@ -37,7 +37,7 @@
     <main>
         <!-- ================= HERO ================= -->
         <section id="hero" class="hero-section">
-            <img src="img/codigo.jpg" alt="Fondo Hero" class="hero-bg-img">
+            <img src="img/imgProyects/NAVimg/codigo.jpg" alt="Fondo Hero" class="hero-bg-img">
             <div class="hero-overlay"></div>
             <div class="hero-hud-top-left">PLAYER 01</div>
             <div class="hero-hud-top-right">SYSTEM ONLINE // 01010011</div>
@@ -72,7 +72,7 @@
                         <div class="hud-corner top-r"></div>
                         <div class="hud-corner bottom-l"></div>
                         <div class="hud-corner bottom-r"></div>
-                        <img src="img/daniela-pino.jpg" alt="Daniela Pino Trabajando" class="about-img">
+                        <img src="img/imgProyects/Profile/daniela-pino.jpg" alt="Daniela Pino Trabajando" class="about-img">
                         <span class="hud-tag">&lt; GAME DEV /&gt;</span>
                     </div>
                 </div>
@@ -108,7 +108,7 @@
                 <article class="project-card">
                     <div class="project-img-container">
                         <span class="project-category">VIDEOJUEGO 3D</span>
-                        <img src="img/23alFilo.jpg" alt="23 al Filo" class="project-img">
+                        <img src="img/imgProyects/Proyect1/23alFilo.jpg" alt="23 al Filo" class="project-img">
                     </div>
                     <div class="project-info">
                         <h3 class="project-name">23 al Filo</h3>
@@ -116,7 +116,7 @@
                         <div class="project-techs">
                             <span>Unity</span> &bull; <span>C#</span> &bull; <span>Blender</span>
                         </div>
-                        <a href="#" class="project-link">VER PROYECTO &gt;</a>
+                        <a href="#" class="project-link btn-modal-trigger" data-target="modal-terror">VER PROYECTO &gt;</a>
                     </div>
                 </article>
 
@@ -124,7 +124,7 @@
                 <article class="project-card">
                     <div class="project-img-container">
                         <span class="project-category purple-cat">ASISTENTE VIRTUAL CON IA</span>
-                        <img src="img/ayudanteIA.jpg" alt="Ayudante con ia" class="project-img">
+                        <img src="img/imgProyects/Proyect2/ayudanteIA.jpg" alt="Ayudante con ia" class="project-img">
                     </div>
                     <div class="project-info">
                         <h3 class="project-name">Asistente Artificial</h3>
@@ -132,16 +132,42 @@
                         <div class="project-techs">
                             <span>PYTHON</span> &bull; <span>Gemini</span> &bull; <span>AI</span>
                         </div>
-                        <a href="#" class="project-link purple-link">VER PROYECTO &gt;</a>
+                        <a href="#" class="project-link purple-link btn-modal-trigger" data-target="modal-jarvis">VER PROYECTO &gt;</a>
                     </div>
                 </article>
             </div>
         </section> 
 
+            <!-- ================= TRABAJOS Y CLIENTES ================= -->
+        <section id="trabajos" class="section projects-section">
+            <div class="section-header">
+                <span class="section-number">03 /</span>
+                <h2 class="section-title">TRABAJOS Y CLIENTES</h2>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Trabajo 1: Recetas de Ana -->
+                <article class="project-card">
+                    <div class="project-img-container">
+                        <span class="project-category purple-cat">DISEÑO Y DESARROLLO WEB</span>
+                        <img src="img/imgProyects/Trabajo1/Icon.jpg" alt="Recetas de Ana" class="project-img img-contain">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-name">Recetas de Ana</h3>
+                        <p class="project-desc">Diseño y desarrollo de sitio web moderno y responsivo para blog de cocina y recetas personalizadas.</p>
+                        <div class="project-techs">
+                            <span>HTML</span> &bull; <span>CSS</span> &bull; <span>UI/UX Design</span>
+                        </div>
+                        <button class="project-link purple-link btn-modal-trigger" data-target="modal-recetas">VER PROYECTO &gt;</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
         <!-- ================= LO QUE PUEDO HACER ================= -->
         <section id="habilidades" class="section capabilities-section">
             <div class="section-header">
-                <span class="section-number">03 /</span>
+                <span class="section-number">04 /</span>
                 <h2 class="section-title">LO QUE PUEDO HACER</h2>
             </div>
 
@@ -199,7 +225,7 @@
         <!-- ================= CONTACTO ================= -->
         <section id="contacto" class="section contact-section">
             <div class="section-header">
-                <span class="section-number">04 /</span>
+                <span class="section-number">05 /</span>
                 <h2 class="section-title">CONTACTAME</h2>
             </div>
 
@@ -217,18 +243,18 @@
                 </div>
 
                 <div class="contact-form-col">
-                    <form class="cyber-form">
+                    <form class="cyber-form" action="https://formspree.io/f/xeaqgrew" method="POST">
                         <div class="form-group">
                             <label>// NOMBRE</label>
-                            <input type="text" placeholder="Tu Nombre" required>
+                            <input type="text" name="name" placeholder="Tu Nombre" required>
                         </div>
                         <div class="form-group">
                             <label>// EMAIL</label>
-                            <input type="email" placeholder="tu@email.com" required>
+                            <input type="email" name="email" placeholder="tu@email.com" required>
                         </div>
                         <div class="form-group">
                             <label>// MENSAJE</label>
-                            <textarea rows="4" placeholder="Contame sobre tu proyecto..." required></textarea>
+                            <textarea rows="4" name="message" placeholder="Contame sobre tu proyecto..." required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary form-submit">ENVIAR</button>
                     </form>
@@ -251,5 +277,120 @@
             <p class="footer-tagline">BUILD &bull; CREATE &bull; PLAY</p>
         </div>
     </footer>
+
+    <!-- ================= MODALES / NOTAS DETALLADAS ================= -->
+    <!-- MODAL 1: PROYECTO TERROR ("23 al Filo") -->
+    <div id="modal-terror" class="project-modal">
+        <div class="modal-backdrop"></div>
+        <!-- Agregamos estilo en línea para la imagen de fondo personalizada de este proyecto -->
+        <div class="modal-content custom-bg-modal" style="background-image: linear-gradient(rgba(8, 8, 13, 0.92), rgba(8, 8, 13, 0.95)), url('img/imgProyects/Proyect1/666.jpg');">
+            <button class="modal-close">&times;</button>
+            
+            <div class="modal-scroll-container">
+                <!-- 1. Nombre del proyecto -->
+                <h2 class="modal-project-title">23 al Filo</h2>
+                <span class="modal-category-tag">EXPEDIENTE // TERROR &amp; SUSPENSO</span>
+                
+                <!-- 2. Imagen grande del proyecto -->
+                <div class="modal-main-image-container">
+                    <img src="img/imgProyects/Proyect1/23alFilo.jpg" alt="23 al Filo" class="modal-hero-img">
+                </div>
+                
+                <!-- 3. Descripción y detalles -->
+                <div class="modal-description-box">
+                    <h3>Descripción Profunda</h3>
+                    <p>Juego de cartas estilo blackjack donde te enfrentas a un demonio al que debes saldar una deuda en la que puedes escapar o quedarte para siempre.</p>
+                    <ul class="modal-specs-list">
+                        <li><strong>Motor:</strong> Unity 3D</li>
+                        <li><strong>Rol:</strong> Líder de Equipo y Diseñadora 3D</li>
+                        <li><strong>Retos:</strong> Organización del trabajo en equipo y realización de los modelos de los personajes.</li>
+                    </ul>
+                </div>
+                
+                <!-- 4. Enlace directo a la carpeta de avances (Fotos/Videos) -->
+                <div class="modal-folder-section">
+                    <h3>// ARCHIVOS Y AVANCES DEL PROYECTO</h3>
+                    <p>Explora la galería completa de capturas de pantalla, artes conceptuales y clips de video en alta definición:</p>
+                    <a href="AQUÍ_PEGAS_EL_LINK_DE_TU_CARPETA_DRIVE" target="_blank" class="folder-link-btn">
+                        📂 VER CARPETA DE AVANCES (FOTOS Y VIDEOS) &gt;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 2: PROYECTO ASISTENTE VIRTUAL ("Asistente Artificial") -->
+    <div id="modal-jarvis" class="project-modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content custom-bg-modal" style="background-image: linear-gradient(rgba(8, 8, 13, 0.92), rgba(8, 8, 13, 0.95)), url('img/imgProyects/Proyect2/coding.jpg');">
+            <button class="modal-close">&times;</button>
+            
+            <div class="modal-scroll-container">
+                <h2 class="modal-project-title">Asistente Artificial</h2>
+                <span class="modal-category-tag purple-tag">PROTOCOLO // IA &amp; AUTOMATIZACIÓN</span>
+                
+                <div class="modal-main-image-container">
+                    <img src="img/imgProyects/Proyect2/ayudanteIA.jpg" alt="Asistente Artificial" class="modal-hero-img">
+                </div>
+                
+                <div class="modal-description-box">
+                    <h3>Arquitectura del Sistema</h3>
+                    <p>Ayudante artificial creado para facilitar y aportar ayuda a proyectos estilo JARVIS, procesando comandos y automatizando tareas de desarrollo.</p>
+                    <ul class="modal-specs-list">
+                        <li><strong>Tecnologías:</strong> PYTHON &bull; Gemini &bull; AI</li>
+                        <li><strong>Enfoque:</strong> Utilidad y optimización de flujos de trabajo.</li>
+                    </ul>
+                </div>
+                
+                <div class="modal-folder-section">
+                    <h3>// ARCHIVOS Y AVANCES DEL PROYECTO</h3>
+                    <p>Accede al repositorio y registros visuales de pruebas de ejecución:</p>
+                    <a href="AQUÍ_PEGAS_EL_LINK_DE_TU_CARPETA_DRIVE" target="_blank" class="folder-link-btn jarvis-folder-btn">
+                        📂 VER CARPETA DE AVANCES (FOTOS Y VIDEOS) &gt;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: RECETAS DE ANA -->
+    <div id="modal-recetas" class="project-modal">
+        <div class="modal-backdrop"></div>
+        <!-- Imagen de fondo personalizada para el modal -->
+        <div class="modal-content custom-bg-modal" style="background-image: linear-gradient(rgba(8, 8, 13, 0.92), rgba(8, 8, 13, 0.95)), url('img/imgProyects/Trabajo1/ComidaSaludable.jpg');">
+            <button class="modal-close">&times;</button>
+                
+            <div class="modal-scroll-container">
+                <h2 class="modal-project-title">Recetas de Ana</h2>
+                <span class="modal-category-tag purple-tag">CLIENTE // DESARROLLO WEB Y UI/UX</span>
+                    
+                <div class="modal-main-image-container">
+                    <img src="img/imgProyects/Trabajo1/Icon.jpg" alt="Recetas de Ana" class="modal-hero-img">
+                </div>
+                    
+                <div class="modal-description-box">
+                    <h3>Detalles del Encargo</h3>
+                    <p>Desarrollo web completo enfocado en la experiencia de usuario (UI/UX) y diseño responsivo para facilitar la lectura de recetas y la navegación fluida de los visitantes.</p>
+                    <ul class="modal-specs-list">
+                        <li><strong>Tecnologías:</strong> HTML5 &bull; CSS3 &bull; Python/Django</li>
+                        <li><strong>Servicios:</strong> Diseño de interfaz, estructura web y maquetación.</li>
+                        <li><strong>Objetivo:</strong> Crear un espacio visualmente limpio, cálido y rápido para la comunidad del cliente.</li>
+                    </ul>
+                </div>
+                    
+                <div class="modal-folder-section">
+                    <h3>// VISITA DE LA PAGINA WEB</h3>
+                    <p>Visita el sitio web en funcionamiento o explora la carpeta de capturas y mockups:</p>
+                    <a href="AQUÍ_PEGAS_EL_LINK_DE_LA_PÁGINA_O_DRIVE" target="_blank" class="folder-link-btn jarvis-folder-btn">
+                        🌐 VISITAR SITIO WEB / CARPETA &gt;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio id="sound-click" src="Audio/super-mario-coin-sound.mp3" preload="auto"></audio>
+    <audio id="sound-success" src="Audio/crowd_small_chil_ec049202_9klCwI6.mp3" preload="auto"></audio>
+    <script src="js/js.js"></script>
+
 </body>
 </html>
